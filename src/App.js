@@ -64,7 +64,9 @@ function App() {
         if (obj.conflict || obj.cellValue === "0") {
           isPuzzleComplete = false;
         }
+        return 0;
       })
+      return 0;
     })
 
     setStatus(isPuzzleComplete);
@@ -85,7 +87,9 @@ function App() {
           };
           return prevState;
         });
+        return 0;
       })
+      return 0;
     })
   }
 
@@ -130,7 +134,7 @@ function App() {
   
   function handleSolvePuzzle() {
     const solvedPuzzle = solvePuzzle(board);
-    setBoard(solvePuzzle);
+    setBoard(solvedPuzzle);
     // console.log(solvedPuzzle);
   }
 

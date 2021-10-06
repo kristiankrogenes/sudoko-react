@@ -66,7 +66,7 @@ function solvePuzzle(currboard) {
     let noValueFound = true;
 
     for (let i=parseInt(editableSquares[index].cellValue); i<10; i++) {
-      if (isValidValue(editableSquares[index], i, board) && i != 0) {
+      if (isValidValue(editableSquares[index], i, board) && i !== 0) {
         editableSquares[index].cellValue = i.toString();
         board[editableSquares[index].cellId[0]][editableSquares[index].cellId[1]].cellValue = i.toString();
         index++;
